@@ -6,6 +6,7 @@ import Navbar from './components/Navbar';
 import Banner from './components/Banner';
 import TicketCard from './components/TicketCard';
 import TaskStatus from './components/TaskStatus';
+import Footer from './components/Footer';
 
 import initialTickets from './tickets.json';
 
@@ -32,7 +33,7 @@ function App() {
     };
 
     return (
-        <div className="min-h-screen bg-[#F3F4F6] font-sans text-gray-800 flex flex-col">
+        <div className="min-h-screen bg-white font-sans text-gray-800 flex flex-col">
             <header className="bg-white w-full shadow-sm relative z-50">
                 <div className="max-w-screen-2xl mx-auto">
                     <Navbar />
@@ -45,7 +46,7 @@ function App() {
                 <div className="flex flex-col lg:flex-row gap-8 mt-6 pb-20">
                     {/* Main Section: Ticket Cards */}
                     <section className="w-full lg:w-2/3">
-                        <h2 className="text-xl md:text-2xl font-bold text-gray-800 mb-6 tracking-wide">Customer Tickets</h2>
+                        <h2 className="text-xl md:text-2xl font-bold text-slate-700 mb-6 tracking-wide">Customer Tickets</h2>
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                             {tickets.length > 0 ? (
                                 tickets.map(ticket => (
@@ -66,7 +67,7 @@ function App() {
 
                     {/* Task Status Section */}
                     <aside className="w-full lg:w-1/3 pt-2 lg:pt-0">
-                        <h2 className="text-xl md:text-2xl font-bold text-gray-800 mb-4 tracking-wide">Task Status</h2>
+                        <h2 className="text-xl md:text-2xl font-bold text-slate-700 mb-4 tracking-wide">Task Status</h2>
                         <p className="text-gray-500 mb-6 text-sm lg:text-base">Select a ticket to add to Task Status</p>
                         <div className="mb-10">
                             {inProgress.length > 0 ? (
@@ -82,13 +83,13 @@ function App() {
                             ) : null}
                         </div>
 
-                        <h2 className="text-xl md:text-2xl font-bold text-gray-800 mb-4 tracking-wide">Resolved Task</h2>
+                        <h2 className="text-xl md:text-2xl font-bold text-slate-700 mb-4 tracking-wide">Resolved Task</h2>
                         <div>
                             {resolvedTasks.length > 0 ? (
                                 <div className="space-y-4">
                                     {resolvedTasks.map(ticket => (
-                                        <div key={ticket.id} className="bg-[#e6e8ff] rounded p-4 shadow-sm border-none">
-                                            <span className="text-[#0f0b29] font-medium text-sm lg:text-base">{ticket.title}</span>
+                                        <div key={ticket.id} className="bg-indigo-100 rounded-md p-4 shadow-sm border-none">
+                                            <span className="text-indigo-900 font-medium text-sm lg:text-base">{ticket.title}</span>
                                         </div>
                                     ))}
                                 </div>
@@ -99,6 +100,9 @@ function App() {
                     </aside>
                 </div>
             </main>
+
+            <Footer />
+
             <ToastContainer position="top-right" autoClose={3000} theme="light" />
         </div>
     );

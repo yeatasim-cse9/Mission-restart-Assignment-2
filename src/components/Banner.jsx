@@ -4,7 +4,7 @@ const Banner = ({ inProgressCount = 0, resolvedCount = 0 }) => {
     return (
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 my-8">
             {/* In-Progress Box (Purple) */}
-            <div className="bg-[#8D58FA] rounded-2xl p-8 lg:p-12 text-white relative overflow-hidden flex flex-col items-center justify-center min-h-[200px] md:min-h-[250px] shadow-sm">
+            <div className="bg-[#8D58FA] rounded-2xl p-8 lg:p-12 text-white relative overflow-hidden flex flex-col items-center justify-center min-h-48 md:min-h-64 shadow-sm">
                 <img
                     src="/vector1.png"
                     alt=""
@@ -23,7 +23,7 @@ const Banner = ({ inProgressCount = 0, resolvedCount = 0 }) => {
             </div>
 
             {/* Resolved Box (Green) */}
-            <div className="bg-[#1DA986] rounded-2xl p-8 lg:p-12 text-white relative overflow-hidden flex flex-col items-center justify-center min-h-[200px] md:min-h-[250px] shadow-sm">
+            <div className="bg-[#1DA986] rounded-2xl p-8 lg:p-12 text-white relative overflow-hidden flex flex-col items-center justify-center min-h-48 md:min-h-64 shadow-sm">
                 <img
                     src="/vector1.png"
                     alt=""
