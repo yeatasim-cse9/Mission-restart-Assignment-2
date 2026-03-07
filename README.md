@@ -126,8 +126,8 @@ Clicking **Complete Button**:
 ---
 
 ## 🔗 Submission
-- **Live Link :** YOUR_DEPLOYED_URL_HERE
-- **GitHub Repository:** YOUR_REPO_URL_HERE
+- **Live Link :** 
+- **GitHub Repository:** https://github.com/yeatasim-cse9/Mission-restart-Assignment-2.git
 
 
 ### 📅 Deadline For 60 marks: 5th March, 2026 (11:59 pm ⏱️)
